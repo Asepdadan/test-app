@@ -16,15 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-//soal point 2 dan javascript ada
+//point 2 and javascript in console log products
 Route::get('helper', function () {
     $data = [1, -1, 3, -4, 5, -2, 7, 4, 2];
     return \App\Traits\Helper::checkPairPositive($data);
 });
-
 Auth::routes();
-
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//soal point 1
+//point 1
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('products.index');
