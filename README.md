@@ -19,3 +19,4 @@
 
 # answer for question point 1 & 2
 1. in routes/web.php
+2. in file resources/views/products/index.blade.php
