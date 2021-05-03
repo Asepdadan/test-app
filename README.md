@@ -12,8 +12,10 @@
 # Install
 - git pull origin master
 - php artisan env
+- composer install  
 - php artisan key:generate
 - php artisan serve
+
 
 
 
